@@ -6,16 +6,16 @@ const path = require('path');
 
 const port = process.env.PORT || 5000; //Line 3
 
-if(process.env.NODE_ENV === 'production'){
+/* if(process.env.NODE_ENV === 'production'){
   app.use(express.static("client/build"))
-} 
+}  */
 app.use(cors())
 
 //app.use(express.static(path.join(__dirname, 'client/build')));
 
-/* app.get('*', (req, res) => { 
+ app.get('*', (req, res) => { 
   res.sendFile(path.join(__dirname + '/client/build/index.html')) 
-}); */
+}); 
 
 // This displays message that the server running and listening to specified port
 app.listen(port, (err) =>{
