@@ -11,16 +11,19 @@ if(process.env.NODE_ENV === 'production'){
 } 
 app.use(cors())
 
-app.use(express.static(path.join(__dirname, 'client/build')));
+//app.use(express.static(path.join(__dirname, 'client/build')));
 
-app.get('*', (req, res) => { 
+/* app.get('*', (req, res) => { 
   res.sendFile(path.join(__dirname + '/client/build/index.html')) 
-});
+}); */
+app.get('/',(req,res)=>{
+  res.send("Hello heroku")
+}) 
 // This displays message that the server running and listening to specified port
 app.listen(port, (err) =>{
   if(err) return console.log(err);
   console.log(`Listening on port ${port}`)
-} 
+}
 ); //Line 6
 
 // create a GET route
