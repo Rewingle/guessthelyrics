@@ -6,7 +6,7 @@ const path = require('path');
 const port = process.env.PORT || 5000; //Line 3
 
 if(process.env.NODE_ENV === "production"){
-  app.use(express.static())
+  app.use(express.static("client/build"))
 }
 
 // This displays message that the server running and listening to specified port
@@ -15,8 +15,5 @@ app.listen(port, (err) =>{
   console.log(`Listening on port ${port}`)
 } 
 ); //Line 6
-app.use(express.static(path.join(__dirname, '')))
+
 // create a GET route
-app.get('/express_backend', (req, res) => { //Line 9
-  res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' }); //Line 10
-}); //Line 11
