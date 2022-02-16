@@ -17,6 +17,3 @@ app.listen(port, (err) =>{
 ); //Line 6
 app.use(express.static(path.join(__dirname, '')))
 // create a GET route
-app.get('/', (req, res) => { //Line 9
-  res.send("HELLO WORLD"); //Line 10
-}); //Line 11
