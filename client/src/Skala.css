@@ -1,0 +1,9 @@
+.col{
+    width: 128px;
+    background-color: cyan;
+    margin-left: 24px;
+    float: left;
+}
+.col:hover{
+    cursor: pointer;
+}
