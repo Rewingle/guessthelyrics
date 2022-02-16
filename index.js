@@ -16,12 +16,7 @@ app.use(cors())
 /* app.get('*', (req, res) => { 
   res.sendFile(path.join(__dirname + '/client/build/index.html')) 
 }); */
-app.get('/',(req,res)=>{
-  res.send("Hello heroku")
-}) 
-app.get('/hi',(req,res)=>{
-  res.send("aaaaa heroku")
-}) 
+
 // This displays message that the server running and listening to specified port
 app.listen(port, (err) =>{
   if(err) return console.log(err);
