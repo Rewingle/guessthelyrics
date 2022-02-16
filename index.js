@@ -15,5 +15,5 @@ app.listen(port, (err) =>{
   console.log(`Listening on port ${port}`)
 } 
 ); //Line 6
-app.use(express.static(path.join(__dirname, '')))
+
 // create a GET route
