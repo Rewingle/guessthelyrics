@@ -9,7 +9,7 @@ import useAuth from './hooks/useAuth'
 function Login() {
 
   const client_id= 'b5c6449b6bb64903a8d8ddce10c09688'
-  const clientSecret = 'c27c369bc65241a7a11a9fbc41a67819' //HIDE THESE ONES
+  const clientSecret = '' //HIDE THESE ONES
   //const redirect_uri= "http://localhost:3000/" //CHANGE B4 DEPLOY
   const [redirect_uri,setRedirect_uri] = useState("http://localhost:3000/")
   const [topTracks,setTopTracks] = useState([])
